@@ -31,7 +31,7 @@ static CGFloat minVolume                    = 0.00001f;
     self = [super init];
     if (self) {
         [self setupSession];
-        [self disableVolumeHUD];
+        //[self disableVolumeHUD];
         
         // Wait for the volume view to be ready before setting the volume to avoid showing the HUD
         double delayInSeconds = 0.1f;
@@ -109,7 +109,7 @@ static CGFloat minVolume                    = 0.00001f;
         }
         
         // Reset volume
-        [self setSystemVolume:self.initialVolume];
+        //[self setSystemVolume:self.initialVolume];
     } else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
